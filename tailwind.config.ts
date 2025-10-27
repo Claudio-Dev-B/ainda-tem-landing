@@ -14,6 +14,8 @@ export default {
     },
     extend: {
       colors: {
+        dourado: "hsl(48, 96%, 38%)",
+        marrombg: "hsl(28, 80%, 10%)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

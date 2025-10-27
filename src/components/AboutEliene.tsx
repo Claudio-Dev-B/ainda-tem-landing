@@ -1,4 +1,4 @@
-import elieneImage from "@/assets/eliene-marçal.jpg";
+import elieneImage from "@/assets/eliene.webp";
 
 const AboutEliene = () => {
   return (
@@ -28,11 +28,14 @@ const AboutEliene = () => {
             {/* Text */}
             <div className="space-y-6 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
               <p className="text-lg md:text-xl text-foreground font-body leading-relaxed">
-                <span className="font-semibold">Eliene Marçal</span> fundou o Ministério Gerando Vidas nas Nações em 2016, em Goiânia. 
-              </p>
-              <p className="text-lg md:text-xl text-foreground font-body leading-relaxed">
-                Com mais de 30 anos de caminhada no evangelho, experiência em aconselhamento de mulheres e um método 
-                comprovado de restauração emocional, ela ajuda mulheres a se reconectarem consigo mesmas e com Deus.
+                <span className="font-semibold">Eliene Marçal</span> é fundadora e líder do Ministério Gerando Vidas nas Nações, iniciado em 2016 em Goiânia/GO. Seu encontro com Jesus aos 16 anos transformou sua vida e a levou a buscar sabedoria na Palavra, tornando-se referência em aconselhamento para mulheres.
+
+Após viver um casamento abusivo, enfrentar divórcio, criar duas filhas sozinha e superar lutas financeiras e emocionais, Eliene aprendeu a se posicionar como edificadora do lar e hoje compartilha seus aprendizados para fortalecer outras famílias. 
+
+Com mais de 30 anos de caminhada no evangelho, participou de seminários e conferências com nomes como Dave Roberson, Mike Murdock e John C. Maxwell, além de atuar como Conselheira e Intercessora no Ministério SILC de 2017 a 2023.
+
+Em 2019, após 20 anos de espera em Deus, viveu um recomeço ao se casar com Edson Luís Vachiano Filho. Hoje, como Apóstola, testemunha que independente do passado, Deus sempre tem um lugar de restituição e recomeço
+
               </p>
             </div>
           </div>

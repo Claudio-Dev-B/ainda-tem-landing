@@ -3,8 +3,6 @@ import AboutCourse from "@/components/AboutCourse";
 import ModulesCarousel from "@/components/ModulesCarousel";
 import ImagineSection from "@/components/ImagineSection";
 import VideoSection from "@/components/VideoSection";
-import ForYouSection from "@/components/ForYouSection";
-import WhatYouGetSection from "@/components/WhatYouGetSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import InvestmentSection from "@/components/InvestmentSection";
 import AboutEliene from "@/components/AboutEliene";
@@ -20,8 +18,6 @@ const Index = () => {
       <ModulesCarousel />
       <ImagineSection />
       <VideoSection />
-      <ForYouSection />
-      <WhatYouGetSection />
       <TestimonialsSection />
       <InvestmentSection />
       <AboutEliene />

@@ -1,68 +1,87 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Heart, Sparkles, Book, Shield, Users, Target, Cross, Brain, Smile, Lock, Home, Sun } from "lucide-react";
-
+import aula1 from "@/assets/1.png";
+import aula2 from "@/assets/2.png";
+import aula3 from "@/assets/3.png";
+import aula4 from "@/assets/4.png";
+import aula5 from "@/assets/5.png";
+import aula6 from "@/assets/6.png";
+import aula7 from "@/assets/7.png";
+import aula8 from "@/assets/8.png";
+import aula9 from "@/assets/9.png";
+import aula10 from "@/assets/10.png";
+import aula11 from "@/assets/11.png";
+import aula12 from "@/assets/12.png";
 const modules = [
   {
-    icon: Heart,
-    title: "Reconhecendo suas feridas emocionais",
-    description: "Identifique padrões que limitam sua vida e impedem sua felicidade."
+    image: (
+      <img
+        src={aula1}
+        alt="Aula 1"
+        className="w-full h-48 object-cover rounded-xl mb-6"
+      />
+    ),
+    title: "Módulo 1 — Aliança e Identidade",
+    description:
+      "Descubra quem você é em Deus. Refaça sua aliança espiritual e desperte a mulher que Ele te chamou para ser.",
+  },
+
+    {
+    image: <img src={aula2} alt="Aula 2" className="w-full h-48 object-cover rounded-xl mb-6" />,
+    title: "Módulo 2 — Perdão",
+    description: "Liberte o passado. Encerre ciclos de dor e entenda o poder libertador do perdão verdadeiro.",
   },
   {
-    icon: Shield,
-    title: "Libertação de padrões destrutivos",
-    description: "Rompa ciclos de dor e comportamentos que se repetem há anos."
+    image: <img src={aula3} alt="Aula 3" className="w-full h-48 object-cover rounded-xl mb-6" />,
+    title: "Módulo 3 — Reconstrução",
+    description: "Aprenda a reconstruir sua vida emocional e espiritual com base em pilares firmes: fé, propósito e autocompaixão.",
   },
   {
-    icon: Sparkles,
-    title: "Autoconhecimento e identidade",
-    description: "Reconecte-se com sua essência e descubra quem você realmente é."
+    image: <img src={aula4} alt="Aula 4" className="w-full h-48 object-cover rounded-xl mb-6" />,
+    title: "Módulo 4 — Tempo de Espera",
+    description: "Encontre descanso no processo. Transforme a espera em fortalecimento e confiança no tempo perfeito de Deus.",
   },
   {
-    icon: Sun,
-    title: "Restauração da autoestima",
-    description: "Reconstrua sua confiança e valor próprio de dentro para fora."
+    image: <img src={aula5} alt="Aula 5" className="w-full h-48 object-cover rounded-xl mb-6" />,
+    title: "Módulo 5 — Posicionamento",
+    description: "Descubra como se colocar no centro da sua própria vida, com limites saudáveis e sabedoria emocional.",
   },
   {
-    icon: Cross,
-    title: "Perdão e cura interior",
-    description: "Liberte-se do peso do passado através do perdão genuíno."
+    image: <img src={aula6} alt="Aula 6" className="w-full h-48 object-cover rounded-xl mb-6" />,
+    title: "Módulo 6 — Autogoverno",
+    description: "Domine suas emoções e decisões. Desenvolva clareza mental e espiritual para guiar sua jornada com propósito.",
   },
   {
-    icon: Users,
-    title: "Relacionamentos saudáveis",
-    description: "Construa vínculos baseados em respeito, amor e reciprocidade."
+    image: <img src={aula7} alt="Aula 7" className="w-full h-48 object-cover rounded-xl mb-6" />,
+    title: "Módulo 7 — Sexo e Desligamento de Alma",
+    description: "Restaure sua pureza emocional. Feche portas espirituais do passado e viva uma nova fase de liberdade interior.",
   },
   {
-    icon: Target,
-    title: "Propósito e chamado",
-    description: "Descubra e viva alinhada com seu propósito divino."
+    image: <img src={aula8} alt="Aula 8" className="w-full h-48 object-cover rounded-xl mb-6" />,
+    title: "Módulo 8 — Mulher Virtuosa",
+    description: "Compreenda o verdadeiro significado da virtude. Seja forte, sensível e plena na sua essência feminina.",
   },
   {
-    icon: Book,
-    title: "Fé e confiança em Deus",
-    description: "Fortaleça sua relação com Deus e confie em Seu plano."
+    image: <img src={aula9} alt="Aula 9" className="w-full h-48 object-cover rounded-xl mb-6" />,
+    title: "Módulo 9 — Princípios do Casamento",
+    description: "Entenda o amor como extensão da sua cura. Descubra como relacionar-se de forma saudável — inclusive consigo mesma.",
   },
   {
-    icon: Brain,
-    title: "Emoções equilibradas",
-    description: "Aprenda a gerenciar suas emoções com sabedoria e equilíbrio."
+    image: <img src={aula10} alt="Aula 10" className="w-full h-48 object-cover rounded-xl mb-6" />,
+    title: "Módulo 10 — Vida Espiritual na Prática",
+    description: "Transforme fé em ação. Leve a presença de Deus para as decisões, rotinas e desafios do seu dia a dia.",
   },
   {
-    icon: Lock,
-    title: "Limites e autocuidado",
-    description: "Estabeleça limites saudáveis e priorize seu bem-estar."
+    image: <img src={aula11} alt="Aula 11" className="w-full h-48 object-cover rounded-xl mb-6" />,
+    title: "Módulo 11 — Propósito",
+    description: "Encontre direção. Alinhe seus dons e talentos ao propósito que Deus reservou para sua vida.",
   },
   {
-    icon: Home,
-    title: "Reconstrução familiar",
-    description: "Restaure e fortaleça seus laços familiares com amor."
+    image: <img src={aula12} alt="Aula 12" className="w-full h-48 object-cover rounded-xl mb-6" />,
+    title: "Módulo 12 — Transformação e Continuidade",
+    description: "Celebre o novo tempo. Aprenda a manter sua fé, sua força e sua essência em constante evolução.",
   },
-  {
-    icon: Smile,
-    title: "Vivendo em plenitude",
-    description: "Experimente uma vida plena, leve e cheia de propósito."
-  }
 ];
 
 const ModulesCarousel = () => {
@@ -106,14 +125,14 @@ const ModulesCarousel = () => {
   };
 
   return (
-    <section className="py-20 md:py-32 bg-neutral/30">
+    <section className="py-20 md:py-32 bg-marrombg">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-4xl mx-auto mb-16 space-y-6 animate-fade-in-up">
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground">
+        <div className="text-center max-w-4xl mx-auto text-white space-y-6 animate-fade-in-up">
+          <h2 className="text-3xl md:text-5xl font-bold text-white">
             Transformação prática e profunda
           </h2>
-          <p className="text-lg md:text-xl text-muted-foreground font-body leading-relaxed">
-            São 12 módulos completos, baseados em princípios bíblicos e no método de cura emocional criado por Eliene Marçal, 
+          <p className="text-lg md:text-xl text-dourado font-body leading-relaxed">
+            São 12 módulos completos, <strong>baseados em princípios bíblicos</strong> e no método de cura emocional criado por <strong>Eliene Marçal</strong>, 
             que já ajudou milhares de mulheres a se reconectarem com sua essência e viver com propósito.
           </p>
         </div>
@@ -137,32 +156,38 @@ const ModulesCarousel = () => {
             <ChevronRight className="w-6 h-6 text-foreground" />
           </button>
 
-          {/* Cards Container */}
-          <div className="overflow-hidden py-8">
-            <div className="flex gap-6 transition-transform duration-500 ease-in-out">
-              {getVisibleModules().map((module, index) => {
-                const Icon = module.icon;
-                return (
-                  <div
-                    key={index}
-                    className="flex-1 min-w-0"
-                  >
-                    <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 h-full">
-                      <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
-                        <Icon className="w-8 h-8 text-primary" />
-                      </div>
-                      <h3 className="text-xl font-bold text-foreground mb-4 leading-tight">
-                        {module.title}
-                      </h3>
-                      <p className="text-muted-foreground font-body leading-relaxed">
-                        {module.description}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
+         {/* Cards Container */}
+<div className="overflow-hidden py-8">
+  <div className="flex gap-6 transition-transform duration-500 ease-in-out">
+ {getVisibleModules().map((module, index) => (
+  <div key={index} className="flex-1 min-w-0">
+    <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 h-full flex flex-col aspect-[3/4] overflow-hidden">
+      
+      {/* Imagem */}
+      {module.image && (
+        <div className="w-full h-2/3 overflow-hidden rounded-xl flex justify-center items-center bg-marrombg">
+          <img
+            src={module.image.props.src}
+            alt={module.image.props.alt}
+            className="w-full h-full object-contain"
+          />
+        </div>
+      )}
+
+      {/* Título */}
+      <h3 className="text-xl font-bold text-foreground mt-4 mb-2 leading-tight text-center">
+        {module.title}
+      </h3>
+
+      {/* Descrição */}
+      <p className="text-muted-foreground font-body leading-snug text-center px-2">
+        {module.description}
+      </p>
+    </div>
+  </div>
+))}
+  </div>
+</div>
 
           {/* Dots Indicator */}
           <div className="flex justify-center gap-2 mt-8">
@@ -180,7 +205,7 @@ const ModulesCarousel = () => {
         </div>
 
         {/* CTA */}
-        <div className="text-center mt-16 animate-fade-in-up">
+        <div className="text-center mt-16 dourado animate-fade-in-up">
           <Button 
             variant="hero" 
             size="lg"
