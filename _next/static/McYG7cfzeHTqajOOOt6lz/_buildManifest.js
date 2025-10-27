@@ -1,6 +1,6 @@
 self.__BUILD_MANIFEST = {
-  "/Index": [
-    "static/chunks/e0d5675e40d599ce.js"
+  "/": [
+    "static/chunks/cb65e7837d958164.js"
   ],
   "/_error": [
     "static/chunks/c1166dd86c13cdeb.js"
@@ -16,7 +16,7 @@ self.__BUILD_MANIFEST = {
     "fallback": []
   },
   "sortedPages": [
-    "/Index",
+    "/",
     "/_app",
     "/_error"
   ]
