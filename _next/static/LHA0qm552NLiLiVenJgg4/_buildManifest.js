@@ -1,13 +1,18 @@
 self.__BUILD_MANIFEST = {
   "/Index": [
-    "static/chunks/8243952b22ea40a8.js"
+    "static/chunks/e0d5675e40d599ce.js"
   ],
   "/_error": [
-    "static/chunks/54ca34e07f6451fc.js"
+    "static/chunks/c1166dd86c13cdeb.js"
   ],
   "__rewrites": {
     "afterFiles": [],
-    "beforeFiles": [],
+    "beforeFiles": [
+      {
+        "source": "/ainda-tem-landing//_next/:path+",
+        "destination": "/ainda-tem-landing/_next/:path+"
+      }
+    ],
     "fallback": []
   },
   "sortedPages": [
