@@ -1,10 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  // Base path para GitHub Pages
-  basePath: '/ainda-tem-landing',
-  assetPrefix: '/ainda-tem-landing',
-  reactStrictMode: true,
+  output: "export",
+  distDir: "out",
+  basePath: "/ainda-tem-landing",
+  assetPrefix: "/ainda-tem-landing/",
+  images: {
+    unoptimized: true,
+  },
 };
 
-module.exports = nextConfig;
+export default nextConfig;
+
+

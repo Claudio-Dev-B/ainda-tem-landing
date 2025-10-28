@@ -5,50 +5,42 @@
   "basePath": "/ainda-tem-landing",
   "redirects": [
     {
-      "source": "/ainda-tem-landing",
-      "destination": "/ainda-tem-landing/",
+      "source": "/ainda-tem-landing/",
+      "destination": "/ainda-tem-landing",
       "basePath": false,
       "internal": true,
       "priority": true,
       "statusCode": 308,
-      "regex": "^/ainda-tem-landing$"
+      "regex": "^/ainda-tem-landing/$"
     },
     {
-      "source": "/:file((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+)/",
-      "destination": "/:file",
-      "internal": true,
-      "priority": true,
-      "missing": [
-        {
-          "type": "header",
-          "key": "x-nextjs-data"
-        }
-      ],
-      "statusCode": 308,
-      "regex": "^(?:/((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+))/$"
-    },
-    {
-      "source": "/:notfile((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/\\.]+)",
-      "destination": "/:notfile/",
+      "source": "/:path+/",
+      "destination": "/:path+",
       "internal": true,
       "priority": true,
       "statusCode": 308,
-      "regex": "^(?:/((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/\\.]+))$"
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
     }
   ],
   "headers": [],
   "rewrites": {
-    "beforeFiles": [],
+    "beforeFiles": [
+      {
+        "source": "/ainda-tem-landing//_next/:path+",
+        "destination": "/ainda-tem-landing/_next/:path+",
+        "regex": "^/ainda-tem-landing//_next(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))(?:/)?$"
+      }
+    ],
     "afterFiles": [],
     "fallback": []
   },
   "dynamicRoutes": [],
   "staticRoutes": [
     {
-      "page": "/Index",
-      "regex": "^/Index(?:/)?$",
+      "page": "/",
+      "regex": "^/(?:/)?$",
       "routeKeys": {},
-      "namedRegex": "^/Index(?:/)?$"
+      "namedRegex": "^/(?:/)?$"
     }
   ],
   "dataRoutes": [],

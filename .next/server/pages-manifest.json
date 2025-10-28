@@ -1,5 +1,5 @@
 {
-  "/Index": "pages/Index.html",
+  "/": "pages/index.html",
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
