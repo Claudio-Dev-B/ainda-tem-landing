@@ -4,6 +4,9 @@ const FinalCTA = () => {
   const scrollToInvestment = () => {
     document.getElementById("investimento")?.scrollIntoView({ behavior: "smooth" });
   };
+    const handleCheckout = () => {
+window.open("https://pay.hub.la/EaKvWGEJdtQ1mh4uxJFi", "_blank");
+};
 
   return (
     <section className="py-20 md:py-32 bg-gradient-to-br from-tertiary via-tertiary to-secondary relative overflow-hidden">
@@ -20,14 +23,14 @@ const FinalCTA = () => {
           </h2>
 
           <div className="animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            <Button 
-              variant="hero" 
-              size="xl"
-              onClick={scrollToInvestment}
-              className="shadow-2xl hover:shadow-primary/50"
-            >
-              Quero começar minha transformação
-            </Button>
+          <Button
+  variant="hero"
+  size="xl"
+  onClick={handleCheckout}
+  className="w-full md:w-auto px-8 py-5 text-lg leading-snug whitespace-normal break-words text-center"
+>
+  Quero começar minha transformação
+</Button>
           </div>
         </div>
       </div>

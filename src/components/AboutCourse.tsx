@@ -2,7 +2,7 @@ import { CheckCircle } from "lucide-react";
 
 const AboutCourse = () => {
   return (
-    <section className="py-20 md:py-32 bg-gradient-to-br from-tertiary via-tertiary to-secondary relative overflow-hidden">
+    <section className="py-20 md:py-32 bg-gradient-to-b from-neutral/30 to-background relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           {/* Text Content */}

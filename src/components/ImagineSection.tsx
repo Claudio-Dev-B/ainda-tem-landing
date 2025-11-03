@@ -19,12 +19,13 @@ const negativePoints = [
 ];
 
 const AvoidSection = () => {
-return (
-<section className="py-20 md:py-32 bg-marrombg">
-<div className="container mx-auto px-4">
-<h2 className="text-3xl md:text-5xl font-bold text-center text-white mb-12 animate-fade-in-up">
-Talvez você esteja vivendo algo assim…
-</h2>
+  return (
+    <section className="py-20 md:py-32 bg-gradient-to-b from-neutral/30 to-background">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl md:text-5xl font-bold text-center text-white mb-12 animate-fade-in-up">
+          Talvez você esteja vivendo algo assim…
+        </h2>
+
   <Card className="max-w-5xl mx-auto overflow-hidden shadow-[0_0_20px_rgba(255,0,0,0.15)] bg-background/60 backdrop-blur-lg border border-red-300/20">
       <CardContent className="p-6 md:p-10">
         <div className="flex flex-col md:flex-row items-center md:items-start gap-8">

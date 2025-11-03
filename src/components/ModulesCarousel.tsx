@@ -1,18 +1,18 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Heart, Sparkles, Book, Shield, Users, Target, Cross, Brain, Smile, Lock, Home, Sun } from "lucide-react";
-import aula1 from "@/assets/1.png";
-import aula2 from "@/assets/2.png";
-import aula3 from "@/assets/3.png";
-import aula4 from "@/assets/4.png";
-import aula5 from "@/assets/5.png";
-import aula6 from "@/assets/6.png";
-import aula7 from "@/assets/7.png";
-import aula8 from "@/assets/8.png";
-import aula9 from "@/assets/9.png";
-import aula10 from "@/assets/10.png";
-import aula11 from "@/assets/11.png";
-import aula12 from "@/assets/12.png";
+import aula1 from "@/assets/1.webp";
+import aula2 from "@/assets/2.webp";
+import aula3 from "@/assets/3.webp";
+import aula4 from "@/assets/4.webp";
+import aula5 from "@/assets/5.webp";
+import aula6 from "@/assets/6.webp";
+import aula7 from "@/assets/7.webp";
+import aula8 from "@/assets/8.webp";
+import aula9 from "@/assets/9.webp";
+import aula10 from "@/assets/10.webp";
+import aula11 from "@/assets/11.webp";
+import aula12 from "@/assets/12.webp";
 const modules = [
   {
     image: (
